@@ -49,7 +49,7 @@ export const MobileMenu = ({ isOpen, onClose }) => {
                   <span>{item.label}</span>
                   {hasSubmenu && (
                     <img
-                      src="/icons/chevron-down.svg"
+                      src={`${import.meta.env.BASE_URL}icons/chevron-down.svg`}
                       alt=""
                       className={`${styles.chevron} ${isExpanded ? styles.chevronOpen : ""}`}
                     />

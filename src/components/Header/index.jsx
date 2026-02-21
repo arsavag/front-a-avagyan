@@ -44,7 +44,7 @@ export const Header = ({ searchValue = "", onSearchChange }) => {
         >
           ☰
         </button>
-        <img className={styles.logo} src="/Logo.png" alt="Logo" />
+        <img className={styles.logo} src={`${import.meta.env.BASE_URL}Logo.png`} alt="Logo" />
         <button
           className={styles.searchButton}
           onClick={() => setIsSearchOpen(true)}
@@ -52,7 +52,7 @@ export const Header = ({ searchValue = "", onSearchChange }) => {
         >
           <img
             className={styles.searchIcon}
-            src="/icons/search-icon.svg"
+            src={`${import.meta.env.BASE_URL}icons/search-icon.svg`}
             alt=""
           />
         </button>
