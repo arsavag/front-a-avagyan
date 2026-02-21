@@ -37,6 +37,14 @@
   text-transform: capitalize;
   color: #000000;
   transition: opacity 0.2s ease;
+  &::after {
+    content: url('/icons/chevron-down.svg');
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(1rem, -50%);
+    color: #000000;
+  }
 }
 
 .submenu {
@@ -83,6 +91,10 @@
     transform: translateY(-50%);
     color: #000000;
   }
+}
+
+.chevron {
+  margin-left: 0.25rem;
 }
 
 .menuItem:hover .submenu {
