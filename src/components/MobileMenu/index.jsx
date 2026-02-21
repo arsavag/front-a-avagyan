@@ -27,9 +27,9 @@ export const MobileMenu = ({ isOpen, onClose }) => {
 
       <div className={`${styles.menu} ${isOpen ? styles.open : ""}`}>
         <header className={styles.menuHeader}>
-          <img className={styles.logo} src="/Logo.png" alt="Logo" />
+          <img className={styles.logo} src={`${import.meta.env.BASE_URL}Logo.png`} alt="Logo" />
           <button className={styles.closeBtn} onClick={onClose} aria-label="Close menu">
-            <img src="/icons/x-icon.svg" alt="Close menu" />
+            <img src={`${import.meta.env.BASE_URL}icons/x-icon.svg`} alt="Close menu" />
           </button>
         </header>
 
